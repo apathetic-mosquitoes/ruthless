@@ -23,6 +23,96 @@
             </div>
         </nav>
     </header>
+    <main>
+        <img id="heroImg" src="" alt="HeroImage">
+
+        <section class="aboutRuth">
+            <section id="aboutRuth">
+                <h3 id="h3AboutRuth">About Ruth</h3>
+                <p id="pAboutRuth">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe at quo rem beatae, iure aperiam eius ea ex quos, nihil similique id quaerat dolore, amet dolorum adipisci sed quasi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod cum molestias ipsam, exercitationem, neque minima nam modi consequatur doloribus sit laborum vel necessitatibus accusantium eius dolorum quia quam similique.</p>
+            </section>
+            <img id="ruthImg" src="" alt="RuthImage">
+        </section>
+
+        <section class="services">
+            <h3>Sessions I Offer</h3>
+            <section id="weddingsOffer">
+                <img src="" alt="weddings">
+                <h4>Weddings</h4>
+            </section>
+            <section id="portraitsOffer">
+                <img src="" alt="portraits">
+                <h4>Portraits</h4>
+            </section>
+            <section id="maternityOffer">
+                <img src="" alt="maternity">
+                <h4>Maternity</h4>
+            </section>
+        </section>
+
+        <section class="bookAppt">
+            <img src="" alt="Reserve Your Photography Session Today">
+            <form id="apptForm">
+                <fieldset>
+                  <legend>Book Ruth as a Photographer for Your Event</legend>
+              
+                  <label for="name">Name:
+                    <input type="text" placeholder="First and Last Name" name="name" required>
+                  </label>
+              
+                  <label for="email">Email:
+                    <input type="text" placeholder="example@gmail.com" name="email" required>
+                  </label>
+              
+                  <label for="typeOfSession">Type of Photo Session
+                    <select name="typeOfSession" id="session">
+                      <option value="wedding">Wedding</option>
+                      <option value="portrait">Portrait</option>
+                      <option value="maternity">Maternity</option>
+                    </select>
+                  </label>
+              
+                  <label for="startTime">What time do you want this session to start?: 
+                    <input type="time" id="apptTimeStart" name="startTime" step=".5">
+                  </label>
+              
+                  <label for="endTime">What time do you want this session to end?: 
+                    <input type="time" id="apptTimeEnd" name="endTime" step=".5">
+                  </label>
+              
+                  <label for="apptMessage">Message:
+                    <input type="text" placeholder="Anything else? Maybe a theme? Any extra info helps" name="apptMessage" required>
+                  </label>
+              
+                  <input type="submit" value="Submit Appointment">
+                </fieldset>
+              </form>
+        </section>
+
+        <section class="contactRuth">
+            <form id="contactForm">
+                <fieldset>
+                  <legend>Contact Ruth</legend>
+              
+                  <label for="name">Name:
+                    <input type="text" placeholder="First and Last Name" name="name" required>
+                  </label>
+              
+                  <label for="email">Email:
+                    <input type="text" placeholder="example@gmail.com" name="email" required>
+                  </label>
+              
+                  <label for="contactMessage">Message:
+                    <input type="text" placeholder="What are you contacting Ruth for?" name="contactMessage" required>
+                  </label>
+              
+                  <input type="submit" value="Submit Contact Request">
+              
+                </fieldset>
+            </form>
+            <img src="" alt="Contact Me!">
+        </section>
+    </main>
     <script src="js/index.js"></script>
 </body>
 </html>
