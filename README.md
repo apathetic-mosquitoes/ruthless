@@ -16,6 +16,46 @@
 
 - MVP: schedule appointment (calendar), see previous work, gallery, contact info (forms)
 
+User Stories
+
+1. Schedule an appointment
+
+2. As a user, I want to be able to schedule an appointment for a photography session. 
+
+3. Feature Tasks:
+    - Choose a date and time
+    - Choose the type/category of photography session
+
+4. Acceptance Tests:
+    - Ensure that the appointment successfully saves in local storage
+    - Properly display errors to the user if data does not save.
+    - Validate proper user input for appointment.
+
+
+1. Cancel Appointment
+
+2. As a user, I want to be able to cancel an appointment.
+
+3. Feature Tasks:
+    - Find your appointment and cancel it
+
+4. Acceptance Tests:
+    - The canceled appointment is removed from local storage
+
+    
+1. User Story: Contact the photographer
+
+2. As a user, I want to be able to contact the photographer to ask questions or get more information before making an appointment.
+
+3. Feature Tasks
+  a. Provide a form with fields for user's contact information (email and/or phone number).
+  b. Provide a paragraph-size text box where the user can input what specific information they are seeking, so that when the photographer contacts me back, both are already on the same page.
+  c. After completing the form, respond to the user with an estimated time to receive a response.
+
+4. Acceptance Tests
+   a. Ensure that the user inputs a valid phone number.
+   b. Ensure that the user inputs a valid email address.
+   c. Ensure that the user inputs a message for the photographer (no blank text box).
 ## User Stories
 
 - Title: Wedding photo albums
