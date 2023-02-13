@@ -77,3 +77,12 @@ Albums:
 ### UML
 
 ![UML for the project](img/UML.png)
+
+### WireFrames
+
+- Home
+![Home page wireframe](img/WireFrame_Home.png)
+- Gallery
+![Gallery wireframe](img/WireFrame_Gallery.png)
+- Developers
+![Developers wireframe](img/WireFrame_Mosquito.png)
