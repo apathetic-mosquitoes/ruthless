@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.list-items {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;
+    list-style-type: none;
+
+
+}
