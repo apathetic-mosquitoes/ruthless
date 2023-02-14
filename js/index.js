@@ -100,8 +100,13 @@ function handleCancel(event) {
 
 contactLink.addEventListener('click', handleScroll);
 scheduleLink.addEventListener('click', handleScroll);
-cancelForm.addEventListener('submit', handleCancel);
-apptForm.addEventListener('submit', apptHandler);
+if (cancelForm) {
+  cancelForm.addEventListener('submit', handleCancel);
+}
+if (apptForm) {
+  apptForm.addEventListener('submit', apptHandler);
+  
+}
 
 // returns data from local storage, if any
 // takes in a "key" argument
@@ -158,7 +163,9 @@ function handleContactSubmit(event) {
 }
 
 // event listener for contact form input
-contactFormDom.addEventListener('submit', handleContactSubmit);
+if (contactFormDom) {
+  contactFormDom.addEventListener('submit', handleContactSubmit);
+}
 
 // function to check local storage for existing contact info
 function checkStorage() {
