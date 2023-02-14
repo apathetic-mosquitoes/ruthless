@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-/* Color Palette:*/
+/* Color Palette: Stick to logo-imgback for all backgrounds
+- all text is black
+- the only other color we will use is pictures
+*/
 :root{
     --dark-green: #658864;
     --dark-tan: #B7B78A;
