@@ -28,13 +28,13 @@ function handleScroll(event) {
   event.preventDefault();
 
   if (event.target.id === 'contact-us') {
-    contactRuth.classList.remove('noShow');
-    bookAppt.classList.add('noShow');
+    contactSection.classList.remove('noShow');
+    apptSection.classList.add('noShow');
     contactForm.scrollIntoView({ behavior: 'smooth' });
   }
   else if (event.target.id === 'schedule') {
-    bookAppt.classList.remove('noShow');
-    contactRuth.classList.add('noShow');
+    apptSection.classList.remove('noShow');
+    contactSection.classList.add('noShow');
     apptForm.scrollIntoView({ behavior: 'smooth' });
   }
 
@@ -195,13 +195,16 @@ function checkStorage() {
 
 let url = window.location.href
 url = url.split('html')
+let apptSection = document.getElementById('apptSection');
+let contactSection = document.getElementById('contactSection');
+if (url[1] && url[1] === '#contactSection') {
 
-if (url[1] && url[1] === '#contactRuth') {
-  contactForm.classList.remove('noShow');
-  apptForm.classList.add('noShow');
-  document.getElementById('contactRuth').scrollIntoView({ behavior: 'smooth' });
-} else if (url[1] && url[1] == '#bookAppt'){
-  contactForm.classList.remove('noShow');
-  apptForm.classList.add('noShow');
+  console.log(url)
+  contactSection.classList.remove('noShow');
+  apptSection.classList.add('noShow');
+  document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
+} else if (url[1] && url[1] == '#apptSection'){
+  contactSection.classList.add('noShow');
+  apptSection.classList.remove('noShow');
   contactForm.scrollIntoView({ behavior: 'smooth' });
 }
