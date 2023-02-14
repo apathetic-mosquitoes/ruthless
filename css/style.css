@@ -1,6 +1,7 @@
 /* Color Palette:
 #658864
 #B7B78A
+#f8f7f2 --- LOGO IMAGE BACKGROUND
 #DDDDDD
 #EEEEEE */
 
@@ -34,4 +35,26 @@ nav ul {
     width: 200px;
     height: 100px;
     object-fit: cover;
+}
+
+footer {
+  position: absolute bottom;
+  height: 150px;
+  width: 960px;
+  margin: 30px auto auto auto;
+  background-image: linear-gradient(#FFF,#B7B78A, #FFF);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+footer div {
+  height: 60px;
+  width: 960px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
