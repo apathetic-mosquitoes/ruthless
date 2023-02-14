@@ -1,6 +1,8 @@
 'use strict';
 // scroll to contact form on click
 
+
+
 let contactForm = document.querySelector('#contactForm');
 let apptForm = document.querySelector('#apptForm');
 let cancelForm = document.querySelector('#cancelForm');
@@ -22,6 +24,7 @@ let appts = [];
 
 function handleScroll(event) {
   event.preventDefault();
+
   if (event.target.id === 'contact-us') {
     contactForm.classList.remove('noShow');
     apptForm.classList.add('noShow');
@@ -188,14 +191,15 @@ function checkStorage() {
 }
 
 
-// function openForm() {
-//   document.getElementById('apptForm').style.display = 'block';
-// }
-// function closeForm() {
-//   document.getElementById('apptForm').style.display = 'none';
-// }
+let url = window.location.href
+url = url.split('html')
 
-// closeForm();
-// let openButton = document.querySelector('.open-button');
-// document.addEventListener('click',closeForm);
-// document.addEventListener('click',openForm);
+if (url[1] && url[1] === '#contactRuth') {
+  contactForm.classList.remove('noShow');
+  apptForm.classList.add('noShow');
+  document.getElementById('contactRuth').scrollIntoView({ behavior: 'smooth' });
+} else if (url[1] && url[1] == '#bookAppt'){
+  contactForm.classList.remove('noShow');
+  apptForm.classList.add('noShow');
+  contactForm.scrollIntoView({ behavior: 'smooth' });
+}
