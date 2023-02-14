@@ -74,21 +74,25 @@
                       <option value="maternity">Maternity</option>
                     </select>
                   </label>
+                  <label for="date">Date of Appointment: 
+                    <input type="date" id="apptTimeStart" name="date">
+                  </label>
               
                   <label for="startTime">What time do you want this session to start?: 
-                    <input type="time" id="apptTimeStart" name="startTime" step=".5">
+                    <input type="time" id="apptTimeStart" name="startTime" >
                   </label>
               
                   <label for="endTime">What time do you want this session to end?: 
-                    <input type="time" id="apptTimeEnd" name="endTime" step=".5">
+                    <input type="time" id="apptTimeEnd" name="endTime" >
                   </label>
               
                   <label for="apptMessage">Message:
-                    <input type="text" placeholder="Anything else? Maybe a theme? Any extra info helps" name="apptMessage" required>
+                    <input id="submit-appt" type="text" placeholder="Anything else? Maybe a theme? Any extra info helps" name="apptMessage" required>
                   </label>
               
                   <input type="submit" value="Submit Appointment">
                 </fieldset>
+                <p id="successMessage"></p>
               </form>
         </section>
 
