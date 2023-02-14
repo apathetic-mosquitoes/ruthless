@@ -23,9 +23,13 @@ let appts = [];
 function handleScroll(event) {
   event.preventDefault();
   if (event.target.id === 'contact-us') {
+    contactForm.classList.remove('noShow');
+    apptForm.classList.add('noShow');
     contactForm.scrollIntoView({ behavior: 'smooth' });
   }
   else if (event.target.id === 'schedule') {
+    apptForm.classList.remove('noShow');
+    //contactForm.classList.add('noShow');
     apptForm.scrollIntoView({ behavior: 'smooth' });
   }
 
@@ -175,3 +179,16 @@ function checkStorage() {
     return CONTACT_ARRAY;
   }
 }
+
+
+// function openForm() {
+//   document.getElementById('apptForm').style.display = 'block';
+// }
+// function closeForm() {
+//   document.getElementById('apptForm').style.display = 'none';
+// }
+
+// closeForm();
+// let openButton = document.querySelector('.open-button');
+// document.addEventListener('click',closeForm);
+// document.addEventListener('click',openForm);
