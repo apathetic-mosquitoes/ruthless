@@ -143,6 +143,18 @@ footer{
     max-width: 300px;
 }
 
+.bookAppt > img{
+    max-height: 440px;
+}
+
+.contactRuth > img{
+    max-height: 225px;
+}
+
+.cancelAppt > img{
+    max-height: 225px;
+}
+
 #portraitsOffer {
     grid-column-start: 2;
     grid-column-end: 3;
