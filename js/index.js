@@ -8,6 +8,8 @@ let apptForm = document.querySelector('#apptForm');
 let cancelForm = document.querySelector('#cancelForm');
 let contactLink = document.querySelector('#contact-us');
 let scheduleLink = document.querySelector('#schedule');
+let bookAppt = document.querySelector('.bookAppt');
+let contactRuth = document.querySelector('.contactRuth');
 // constructor for appointments
 function Appointment(name, email, type, sessionStart, sessionEnd, message, date) {
   this.name = name,
@@ -26,13 +28,13 @@ function handleScroll(event) {
   event.preventDefault();
 
   if (event.target.id === 'contact-us') {
-    contactForm.classList.remove('noShow');
-    apptForm.classList.add('noShow');
+    contactRuth.classList.remove('noShow');
+    bookAppt.classList.add('noShow');
     contactForm.scrollIntoView({ behavior: 'smooth' });
   }
   else if (event.target.id === 'schedule') {
-    apptForm.classList.remove('noShow');
-    //contactForm.classList.add('noShow');
+    bookAppt.classList.remove('noShow');
+    contactRuth.classList.add('noShow');
     apptForm.scrollIntoView({ behavior: 'smooth' });
   }
 
