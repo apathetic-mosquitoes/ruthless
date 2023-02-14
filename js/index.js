@@ -72,6 +72,7 @@ function apptHandler(event){
     setTimeout(function(){
         successMessage.style.display = 'none';
     }, 2000)
+  }
 
 function handleScroll(event){
   event.preventDefault();
@@ -132,25 +133,6 @@ function getLocalStorage(key) {
     }
     return arr
 }
-
-
-
-
-
-function checkStorage() {
-    let checkLocalStorage = localStorage.getItem('contactStorage');
-    // if it exists, redefine the contact array with local storage contents
-    if (checkLocalStorage) {
-      console.log(checkLocalStorage);
-      CONTACT_ARRAY = JSON.parse(checkLocalStorage);
-      console.log(CONTACT_ARRAY);
-      return CONTACT_ARRAY;
-    // if not, return empty array
-    } else {
-      console.log('nothing in local storage');
-      return CONTACT_ARRAY;
-    }
-  }
 
 
 // contact form JS functionality starts here
