@@ -1,3 +1,9 @@
+/* Color Palette:
+#658864
+#B7B78A
+#DDDDDD
+#EEEEEE */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -124,7 +130,8 @@ label input{
     margin-left:75%;
 }
 
-
-
-
-
+#logo {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
