@@ -1,14 +1,35 @@
-/* Color Palette:
-#658864
-#B7B78A
-#f8f7f2 --- LOGO IMAGE BACKGROUND
-#DDDDDD
-#EEEEEE */
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+/* Color Palette: Stick to logo-imgback for all backgrounds
+- all text is black
+- the only other color we will use is pictures
+*/
+:root{
+    --dark-green: #658864;
+    --dark-tan: #B7B78A;
+    --light-gray: #DDDDDD;
+    --logo-imgback: #f8f7f2;
+}
+
+body{
+    background-color: var(--logo-imgback);
+}
+
+header {
+    background-color: var(--logo-imgback);
+    width: 960px;
+    margin: auto;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav {
@@ -42,10 +63,13 @@ main {
     border: 2px solid black;
 }
 
+footer{
+    width: 960px;
+    margin: auto;
+}
+
 #heroImg {
-    width: 100vw;
-    height:90vh;   
-    opacity: 50%;
+  margin: auto;
 }
 
 .aboutRuth{
@@ -115,6 +139,10 @@ main {
 .bookAppt>form, .cancelAppt>form{
     width: 75%; 
 } 
+
+fieldset{
+    border: solid black 1px;
+}
  
 .contactRuth form{
     width: 75%; 
@@ -139,7 +167,7 @@ label input{
 
 
 #logo {
-    width: 200px;
+    width: 100px;
     height: 100px;
     object-fit: cover;
 }
