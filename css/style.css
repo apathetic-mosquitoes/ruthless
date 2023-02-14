@@ -99,17 +99,17 @@ main {
     grid-row-end: 3;
 }
 
-.bookAppt, .contactRuth {
+.bookAppt, .contactRuth, .cancelAppt{
     width: 100%;
     margin: 0rem auto 7rem auto;
     display: flex;
     justify-content: space-between;
 }
 
-.bookAppt form {
+.bookAppt>form, .cancelAppt>form{
     width: 75%; 
 } 
-
+ 
 .contactRuth form{
     width: 75%; 
 }
@@ -129,6 +129,8 @@ label input{
     width: 150px;
     margin-left:75%;
 }
+
+
 
 #logo {
     width: 200px;
