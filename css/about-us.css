@@ -1,0 +1,33 @@
+main {
+  width: 90%;
+  margin:auto;
+}
+
+.developer-profile{
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.developer-profile:nth-child(odd) section {
+  /* top right bottom left */
+  margin: 5rem 3rem 3rem 5rem;
+}
+
+.developer-profile:nth-child(even) {
+  flex-direction: row-reverse;
+  margin-left: 0;
+}
+
+.developer-profile:nth-child(even) section {
+  margin: 3rem 5rem 3rem 5rem;
+}
+
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  margin: 30px 0px 30px 0;
+}
+
+  
