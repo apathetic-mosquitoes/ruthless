@@ -1,6 +1,8 @@
 main {
     width: 960px;
-
+    /* display: grid; */
+    /* grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 200px 200x 600px 600px; */
     margin: 3rem auto;
 }
 
@@ -27,6 +29,7 @@ div.image-div {
 
 img {
     margin: 10px 0;
+    max-width: 300px;
 }
 
 section h2 {
