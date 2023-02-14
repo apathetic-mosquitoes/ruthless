@@ -233,3 +233,7 @@ footer div {
   justify-content: space-around;
   align-items: center;
 }
+
+.noShow {
+  display: none;
+}
