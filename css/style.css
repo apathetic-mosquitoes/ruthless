@@ -237,3 +237,7 @@ footer div {
 .noShow {
   display: none;
 }
+
+#kirk {
+    max-width: 400px;
+}
