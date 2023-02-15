@@ -10,6 +10,7 @@ let contactLink = document.querySelector('#contact-us');
 let scheduleLink = document.querySelector('#schedule');
 let bookAppt = document.querySelector('.bookAppt');
 let contactRuth = document.querySelector('.contactRuth');
+// let scrollTarget = document.querySelector('#text')
 
 // constructor for appointments
 function Appointment(name, email, type, sessionStart, sessionEnd, message, date) {
@@ -39,12 +40,12 @@ function handleScroll(event) {
   if (event.target.id === 'contact-us') {
     contactSection.classList.remove('noShow');
     apptSection.classList.add('noShow');
-    contactForm.scrollIntoView({ behavior: 'smooth' });
+    contactRuth.scrollIntoView({ behavior: 'smooth' });
   }
   else if (event.target.id === 'schedule') {
     apptSection.classList.remove('noShow');
     contactSection.classList.add('noShow');
-    apptForm.scrollIntoView({ behavior: 'smooth' });
+    bookAppt.scrollIntoView({ behavior: 'smooth' });
   }
 
 }
@@ -135,7 +136,6 @@ if (cancelForm) {
 }
 if (apptForm) {
   apptForm.addEventListener('submit', apptHandler);
-  
 }
 
 // returns data from local storage, if any
