@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#"><img src= "img/Logo.png" id="logo"/></a>
+                <a href="index.html"><img src= "img/Logo.png" id="logo"/></a>
             </div>
             <div class="list-items">
                 <ul>
@@ -25,38 +25,38 @@
         </nav>
     </header>
 
-    
-
     <main>
       <img id="heroImg" src="/img/photos/heroImg.JPG" alt="HeroImage">
 
         <section class="aboutRuth">
             <section id="aboutRuth">
                 <h3 id="h3AboutRuth">About Ruth</h3>
-                <p id="pAboutRuth">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe at quo rem beatae, iure aperiam eius ea ex quos, nihil similique id quaerat dolore, amet dolorum adipisci sed quasi animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod cum molestias ipsam, exercitationem, neque minima nam modi consequatur doloribus sit laborum vel necessitatibus accusantium eius dolorum quia quam similique.</p>
+                <p id="pAboutRuth">I’m a photographer based in the pacific north west but I love to travel so that won’t stop me from flying to you and capturing your special day! Here’s some facts about me: I got
+                  married at 18 & been happily married for 4 years. I have a twin sister, I’m allergic to eggs dairy and wheat. My favorite color is green, I loveeeee matcha, plants, JESUS & the ocean will forever have a special place in my heart. Growing up, I was always creative with art and photography  is a way for me to express my creativity by creating art with humans and nature</p>
             </section>
             <img id="ruthImg" src="img/photos/photographer.JPG" alt="RuthImage">
         </section>
 
         <section class="services">
             <h3 id="services">Sessions I Offer</h3>
+
             <section id="weddingsOffer">
-              <img src="img/photos/indexWeddings.JPG" alt="weddings">
+              <a href="gallery.html#weddings"><img src="img/photos/indexWeddings.JPG" alt="weddings"></a>
               <div id="text">Weddings</div>
             </section>
 
             <section id="portraitsOffer">
-                <img src="img/photos/indexPortraits.JPG" alt="portrait">
+              <a href="gallery.html#portraits"><img src="img/photos/indexPortraits.JPG" alt="portrait"></a>
                 <div id="text">Portraits</div>
             </section>
 
             <section id="maternityOffer">
-                <img src="img/photos/indexMaternity.JPG" alt="maternity">
+              <a href="gallery.html#maternity"><img src="img/photos/indexMaternity.JPG" alt="maternity"></a>
                 <div id="text">Maternity</div>
             </section>
         </section>
 
-        <section class="bookAppt">
+        <section id="apptSection" class="bookAppt noShow">
             <img src="img/photos/indexBookAppt.JPG" alt="Reserve Your Photography Session Today">
             <form id="apptForm">
                 <fieldset>
@@ -70,36 +70,40 @@
                     <input type="text" placeholder="example@gmail.com" name="email" required>
                   </label>
               
-                  <label for="typeOfSession">Type of Photo Session
-                    <select name="typeOfSession" id="session">
-                      <option value="wedding">Wedding</option>
-                      <option value="portrait">Portrait</option>
-                      <option value="maternity">Maternity</option>
-                    </select>
-                  </label>
-                  <label for="date">Date of Appointment: 
-                    <input type="date" id="apptTimeStart" name="date">
-                  </label>
+                  <div class="form-group">
+                    <label for="typeOfSession">Type of Photo Session
+                      <select name="typeOfSession" id="session">
+                        <option value="wedding">Wedding</option>
+                        <option value="portrait">Portrait</option>
+                        <option value="maternity">Maternity</option>
+                      </select>
+                    </label>
+                    <label for="date">Date of Appointment: 
+                      <input type="date" id="apptTimeStart" name="date">
+                    </label>
+                  </div>
               
-                  <label for="startTime">What time do you want this session to start?: 
-                    <input type="time" id="apptTimeStart" name="startTime" >
-                  </label>
-              
-                  <label for="endTime">What time do you want this session to end?: 
-                    <input type="time" id="apptTimeEnd" name="endTime" >
-                  </label>
+                  <div class="form-group">
+                    <label for="startTime">Start Time:
+                      <input type="time" id="apptTimeStart" name="startTime" >
+                    </label>
+                
+                    <label for="endTime">End Time 
+                      <input type="time" id="apptTimeEnd" name="endTime" >
+                    </label>
+                  </div>
               
                   <label for="apptMessage">Message:
                     <input id="submit-appt" type="text" placeholder="Anything else? Maybe a theme? Any extra info helps" name="apptMessage" required>
                   </label>
               
-                  <input class="submit" type="submit" value="Submit Appointment">
+                  <input class="submit btn-grad" type="submit" value="Schedule">
                 </fieldset>
                 <p id="successMessage"></p>
               </form>
         </section>
 
-        <section class="contactRuth noShow">
+        <section id="contactSection" class="contactRuth noShow">
             <form id="contactForm" >
                 <fieldset>
                   <legend>Contact Ruth</legend>
@@ -116,7 +120,7 @@
                     <input type="text" id="contactMessage" placeholder="What are you contacting Ruth for?" name="contactMessage" required>
                   </label>
               
-                  <input class="submit" type="submit" value="Submit Contact Request">
+                  <input class="submit btn-grad" type="submit" value="Contact">
               
                 </fieldset>
             </form>
@@ -131,7 +135,7 @@
               <label for="cancel">Please enter the email used to book the appt:
                 <input type="text" placeholder="example@gmail.com" name="cancel" required>
               </label>
-              <input class = "submit" type="submit" value="Submit Cancel Request">
+              <input class = "submit btn-grad cancel" type="submit" value="Cancel Appt">
             </fieldset>
           </form>
         </section>

@@ -1,8 +1,13 @@
+#logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
 /* main {
     width: 960px;
-    display: grid;
+    display: grid; 
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 200px 200x 600px 600px;
+    grid-template-rows: 200px 200x 600px 600px; 
     margin: 3rem auto;
 } */
 
@@ -55,7 +60,7 @@ section h2 {
     color: #fff;
     text-decoration: none;
   }
- 
+
 .image-div {
     height:600px;
     overflow-y: scroll;
@@ -92,4 +97,3 @@ section h2 {
     background: #f8f7f2be; 
     border-radius: 10px;
   }
-
