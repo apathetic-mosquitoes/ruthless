@@ -1,17 +1,18 @@
 main {
   width: 960px;
-  margin:auto;
+  margin: 0 auto;
+  /* border: 2px solid black; */
 }
 
 .developer-profile{
-  margin: 5rem;
+  margin: 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .developer-profile:nth-child(odd) section {
-  /* top right bottom left */
+
   margin: 5rem 3rem 3rem 5rem;
 }
 
