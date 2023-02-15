@@ -71,7 +71,7 @@ function apptHandler(event) {
   localStorage.setItem('appointment_array', stringified_array);
 
   // TODO: clear form inputs after submit
-  // apptForm.reset();
+  apptForm.reset();
 
 
   // TODO: display form submitted message
@@ -124,6 +124,7 @@ function handleCancel(event) {
     }, 2000);
     cancelForm.appendChild(message);
   }
+  cancelForm.reset();
 }
 
 contactLink.addEventListener('click', handleScroll);
@@ -189,6 +190,7 @@ function handleContactSubmit(event) {
     message.style.display = 'none';
   }, 2000);
   contactForm.appendChild(message);
+  contactForm.reset();
 }
 
 // event listener for contact form input
