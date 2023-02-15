@@ -253,28 +253,6 @@ fieldset {
     object-fit: cover;
 }
 
-footer {
-  position: absolute bottom;
-  height: 150px;
-  width: 960px;
-  margin: 30px auto auto auto;
-  background-image: linear-gradient(#FFF,#B7B78A, #FFF);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 10px;
-}
-
-footer div {
-  height: 60px;
-  width: 960px;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .noShow {
   display: none;
 }
@@ -308,3 +286,36 @@ footer div {
     max-width: 400px;
 }
 
+/* Styling for the footer and its children  */
+footer {
+    position: absolute bottom;
+    background:#07080D;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1px 10px 100px 30px 25px;
+    color:#ffffffff;
+}
+
+footer img{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 100px;
+    margin: 0 auto;
+    filter:invert(100%)
+}
+
+#footer-copyright {
+    grid-row-start: 4;
+    grid-row-end:5;
+}
+
+#footer-creators {
+    grid-row-start: 5;
+}
+
+#footer-creators p a{
+    text-decoration: none;
+    color: whitesmoke;
+}
