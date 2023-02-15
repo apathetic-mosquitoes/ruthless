@@ -8,8 +8,8 @@ let apptForm = document.querySelector('#apptForm');
 let cancelForm = document.querySelector('#cancelForm');
 let contactLink = document.querySelector('#contact-us');
 let scheduleLink = document.querySelector('#schedule');
-let bookAppt = document.querySelector('.bookAppt');
-let contactRuth = document.querySelector('.contactRuth');
+//let bookAppt = document.querySelector('.bookAppt');
+//let contactRuth = document.querySelector('.contactRuth');
 
 // constructor for appointments
 function Appointment(name, email, type, sessionStart, sessionEnd, message, date) {
@@ -135,7 +135,6 @@ if (cancelForm) {
 }
 if (apptForm) {
   apptForm.addEventListener('submit', apptHandler);
-  
 }
 
 // returns data from local storage, if any
@@ -226,17 +225,17 @@ function scrollFunction(){
     document.querySelector('h1').style.fontSize = '4rem';
   }
 }
-let url = window.location.href
-url = url.split('html')
+let url = window.location.href;
+url = url.split('html');
 let apptSection = document.getElementById('apptSection');
 let contactSection = document.getElementById('contactSection');
 if (url[1] && url[1] === '#contactSection') {
 
-  console.log(url)
+  console.log(url);
   contactSection.classList.remove('noShow');
   apptSection.classList.add('noShow');
   document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
-} else if (url[1] && url[1] == '#apptSection'){
+} else if (url[1] && url[1] === '#apptSection'){
   contactSection.classList.add('noShow');
   apptSection.classList.remove('noShow');
   contactForm.scrollIntoView({ behavior: 'smooth' });
