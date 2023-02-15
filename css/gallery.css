@@ -3,13 +3,15 @@
     height: 100px;
     object-fit: cover;
 }
-/* main {
-    width: 960px;
-    display: grid; 
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 200px 200x 600px 600px; 
-    margin: 3rem auto;
-} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--logo-imgback);
+  font-family: 'Ubuntu', sans-serif;
+}
 
 .galleryButtons {
     display: flex;
