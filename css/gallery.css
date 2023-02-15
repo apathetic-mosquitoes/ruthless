@@ -1,3 +1,9 @@
+#logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 main {
     width: 960px;
 
@@ -58,4 +64,5 @@ section h2 {
     text-decoration: none;
   }
  
+  
 
