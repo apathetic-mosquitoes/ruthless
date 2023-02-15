@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  letter-spacing: 1.3px;
+}
+
+body {
+  background-color: var(--logo-imgback);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  background-color: var(--logo-imgback);
+  width: 960px;
+  height: 105px;
+  margin: auto;
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+  width:960px;
+  display: flex;
+  background-color: var(--logo-imgback);
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  position: fixed;
+  width: 960px;
+  margin: auto;
+}
+
+.list-items {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 100%;
+  list-style-type: none;
+  
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+}
+
+.developer-profile{
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.developer-profile:nth-child(odd) section {
+
+  margin: 5rem 3rem 3rem 5rem;
+}
+
+.developer-profile:nth-child(even) {
+  flex-direction: row-reverse;
+  margin-left: 0;
+}
+
+.developer-profile:nth-child(even) section {
+  margin: 3rem 5rem 3rem 5rem;
+}
+
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  margin: 30px 0px 30px 0;
+}
+
+.developer-profile img {
+  width:400px;
+  height: 500px;
+  object-fit: cover;
+}
+  

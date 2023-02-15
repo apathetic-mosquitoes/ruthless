@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src= "img/Logo.png" alt="ruth.less photo logo" id="logo"/></a>
+            </div>
+            <div class="list-items">
+                <ul>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a id="contact-us" href="#">Contact Us</a></li>
+                    <li><a id="schedule" href="#">Schedule</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+      <h1>Ruth.les Photography</h1>
+      <img id="heroImg" src="img/photos/heroImg.JPG" alt="HeroImage">
+
+        <section class="aboutRuth">
+            <section id="aboutRuth">
+                <h3 id="h3AboutRuth">About Ruth</h3>
+                <p id="pAboutRuth">I’m a photographer based in the pacific north west but I love to travel so that won’t stop me from flying to you and capturing your special day! Here’s some facts about me: I got
+                  married at 18 & been happily married for 4 years. I have a twin sister, I’m allergic to eggs dairy and wheat. My favorite color is green, I loveeeee matcha, plants, JESUS & the ocean will forever have a special place in my heart. Growing up, I was always creative with art and photography  is a way for me to express my creativity by creating art with humans and nature</p>
+            </section>
+            <img id="ruthImg" src="img/photos/photographer.JPG" alt="RuthImage">
+        </section>
+
+        <section class="services">
+            <h3 id="services">Sessions I Offer</h3>
+
+            <section id="weddingsOffer">
+              <a href="gallery.html#weddings"><img src="img/photos/indexWeddings.JPG" alt="weddings"></a>
+              <div id="text">Weddings</div>
+            </section>
+
+            <section id="portraitsOffer">
+              <a href="gallery.html#portraits"><img src="img/photos/indexPortraits.JPG" alt="portrait"></a>
+                <div id="text">Portraits</div>
+            </section>
+
+            <section id="maternityOffer">
+              <a href="gallery.html#maternity"><img src="img/photos/indexMaternity.JPG" alt="maternity"></a>
+                <div id="text">Maternity</div>
+            </section>
+        </section>
+
+        <section id="apptSection" class="bookAppt noShow scrollTarget">
+            <img src="img/photos/indexBookAppt.JPG" alt="Reserve Your Photography Session Today">
+            <form id="apptForm">
+                <fieldset>
+                  <legend>Book Ruth as a Photographer for Your Event</legend>
+              
+                  <label for="name">Name:
+                    <input type="text" placeholder="First and Last Name" name="name" required>
+                  </label>
+              
+                  <label for="email">Email:
+                    <input type="text" placeholder="example@gmail.com" name="email" required>
+                  </label>
+              
+                  <div class="form-group">
+                    <label for="typeOfSession">Type of Photo Session
+                      <select name="typeOfSession" id="session">
+                        <option value="wedding">Wedding</option>
+                        <option value="portrait">Portrait</option>
+                        <option value="maternity">Maternity</option>
+                      </select>
+                    </label>
+                    <label for="date">Date of Appointment: 
+                      <input type="date" id="apptTimeStart" name="date">
+                    </label>
+                  </div>
+              
+                  <div class="form-group">
+                    <label for="startTime">Start Time:
+                      <input type="time" id="apptTimeStart" name="startTime" >
+                    </label>
+                
+                    <label for="endTime">End Time 
+                      <input type="time" id="apptTimeEnd" name="endTime" >
+                    </label>
+                  </div>
+              
+                  <label for="apptMessage">Message:
+                    <input id="submit-appt" type="text" placeholder="Anything else? Maybe a theme? Any extra info helps" name="apptMessage" required>
+                  </label>
+              
+                  <input class="submit btn-grad" type="submit" value="Schedule">
+                </fieldset>
+                <p id="successMessage"></p>
+              </form>
+        </section>
+
+        <section id="contactSection" class="contactRuth noShow scrollTarget">
+            <form id="contactForm" >
+                <fieldset>
+                  <legend>Contact Ruth</legend>
+              
+                  <label for="name">Name:
+                    <input type="text" id="name" placeholder="First and Last Name" name="contactName" required>
+                  </label>
+              
+                  <label for="email">Email:
+                    <input type="text" id="email" placeholder="example@gmail.com" name="contactEmail" required>
+                  </label>
+              
+                  <label for="contactMessage">Message:
+                    <input type="text" id="contactMessage" placeholder="What are you contacting Ruth for?" name="contactMessage" required>
+                  </label>
+              
+                  <input class="submit btn-grad" type="submit" value="Contact">
+              
+                </fieldset>
+            </form>
+            <img src="img/photos/indexContact.JPG" alt="Contact Me!">
+        </section>
+
+        <section class="cancelAppt">
+          <img src="img/photos/indexCancel.JPG" alt="Contact Me!">
+          <form id="cancelForm">
+            <fieldset>
+              <legend>Cancel Photo Session</legend>
+              <label for="cancel">Please enter the email used to book the appt:
+                <input type="text" placeholder="example@gmail.com" name="cancel" required>
+              </label>
+              <input class = "submit btn-grad cancel" type="submit" value="Cancel Appt">
+            </fieldset>
+          </form>
+        </section>
+    </main>
+
+    <footer>
+      <img src="img/Logo.png" alt="ruthles logo">
+        <!-- copyright info -->
+        <div id="footer-copyright">
+            <p>© Ruth.Les Photography 2023.</p>
+            <p>All rights reserved.</p>
+        </div>
+        <!-- page creator info -->
+        <div id="footer-creators">
+            <p>Page created by <a href="about-us.html" alt="apathetic-mosquitoes">apathetic-mosquitoes</a>.</p> 
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@
 
 - MVP: schedule appointment (calendar), see previous work, gallery, contact info (forms)
 
-User Stories
+## User Stories
 
 1. Schedule an appointment
 
@@ -56,7 +56,8 @@ User Stories
    a. Ensure that the user inputs a valid phone number.
    b. Ensure that the user inputs a valid email address.
    c. Ensure that the user inputs a message for the photographer (no blank text box).
-## User Stories
+
+Albums:
 
 - Title: Wedding photo albums
 - User story: as a new bride, I want to see couples recording their happiest moments on their special day, so that I would like to book the same that's worth the money for my wedding.
@@ -72,3 +73,16 @@ User Stories
 - User story: as a new mom, I want to see how the artist illustrate new-borns, and I would like to be able to scroll through her photos so I have an overview of the age range of the baby photo she typically takes
 - featured tasks: showcase typical baby photos
 - Acceptance tests: show baby photos in a single section
+
+### UML
+
+![UML for the project](img/UML.png)
+
+### WireFrames
+
+- Home
+![Home page wireframe](img/WireFrame_Home.png)
+- Gallery
+![Gallery wireframe](img/WireFrame_Gallery.png)
+- Developers
+![Developers wireframe](img/WireFrame_Mosquito.png)
