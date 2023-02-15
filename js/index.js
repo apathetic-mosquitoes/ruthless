@@ -136,7 +136,6 @@ if (cancelForm) {
 }
 if (apptForm) {
   apptForm.addEventListener('submit', apptHandler);
-  
 }
 
 // returns data from local storage, if any
@@ -227,20 +226,16 @@ function scrollFunction(){
     document.querySelector('h1').style.fontSize = '4rem';
   }
 }
-
-// handles the scrolling for when contact us or schedule is clicked from a different page
 let url = window.location.href
 url = url.split('html')
 let apptSection = document.getElementById('apptSection');
 let contactSection = document.getElementById('contactSection');
 if (url[1] && url[1] === '#contactSection') {
-  console.log('clikc')
+
   console.log(url)
   contactSection.classList.remove('noShow');
   apptSection.classList.add('noShow');
-  console.log(scrollTarget)
-  scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'end' });
-  // document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
+  document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
 } else if (url[1] && url[1] == '#apptSection'){
   contactSection.classList.add('noShow');
   apptSection.classList.remove('noShow');

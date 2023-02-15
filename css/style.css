@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    line-height: 1.5rem;
+    letter-spacing: 1.3px;
 }
 
 /* Color Palette: Stick to logo-imgback for all backgrounds
