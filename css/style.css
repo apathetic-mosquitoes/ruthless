@@ -131,15 +131,7 @@ footer{
     grid-row-start: 2;
     grid-row-end: 3;
 }
-#weddingsOffer > img{
-    max-width: 300px;
-}
-
-#portraitsOffer > img{
-    max-width: 300px;
-}
-
-#maternityOffer > img{
+#weddingsOffer > a > img, #portraitsOffer > a > img, #maternityOffer > a > img{
     max-width: 300px;
 }
 
@@ -264,7 +256,6 @@ footer div {
   display: none;
 }
 
-
 .form-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -293,3 +284,8 @@ footer div {
     box-sizing: content-box;
     margin-right: 40%;
 } */
+
+#kirk {
+    max-width: 400px;
+}
+
