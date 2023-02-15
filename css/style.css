@@ -42,7 +42,8 @@ li > a {
     /* border: 2px solid black; */
     text-decoration: none;
     color: black;
-
+    font-size: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 nav {
