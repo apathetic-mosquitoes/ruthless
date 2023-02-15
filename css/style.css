@@ -131,15 +131,7 @@ footer{
     grid-row-start: 2;
     grid-row-end: 3;
 }
-#weddingsOffer > img{
-    max-width: 300px;
-}
-
-#portraitsOffer > img{
-    max-width: 300px;
-}
-
-#maternityOffer > img{
+#weddingsOffer > a > img, #portraitsOffer > a > img, #maternityOffer > a > img{
     max-width: 300px;
 }
 
