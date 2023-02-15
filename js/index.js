@@ -225,7 +225,7 @@ function scrollFunction(){
   } else {
     document.querySelector('h1').style.fontSize = '4rem';
   }
-
+}
 let url = window.location.href
 url = url.split('html')
 let apptSection = document.getElementById('apptSection');
