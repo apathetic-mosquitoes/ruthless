@@ -5,6 +5,10 @@ let weddingSection = document.querySelector('.weddings');
 let portraitSection = document.querySelector('.Portraits');
 let maternitySection = document.querySelector('.Maternity');
 
+let topic = window.location.href;
+console.log(topic);
+
+
 portraitButton.addEventListener('click', handlePortraitClick);
 weddingButton.addEventListener('click', handleWeddingClick);
 maternityButton.addEventListener('click', handleMaternityClick);
@@ -21,8 +25,8 @@ function handleWeddingClick(event){
     // remove class "no-show" from wedding section
     weddingSection.classList.remove('no-show');
     // add class "no-show" to portrait and maternity section
-    portraitSection.classList.add('no-show');    
-    maternitySection.classList.add('no-show');    
+    portraitSection.classList.add('no-show');
+    maternitySection.classList.add('no-show');
 };
 
 function handleMaternityClick(event){
@@ -41,3 +45,20 @@ function scrollFunction(){
     document.querySelector('h1').style.fontSize = '4rem';
   }
 }
+function pageLoad() {
+    if (topic.includes('#')){
+        let userSelection = topic.split('#')[1];
+        console.log(userSelection);
+        if (userSelection === 'portraits') {
+            handlePortraitClick();
+        }
+        else if (userSelection === 'weddings') {
+            handleWeddingClick();
+        }
+        else if (userSelection === 'maternity') {
+            handleMaternityClick();
+        }
+    }
+}
+
+pageLoad();

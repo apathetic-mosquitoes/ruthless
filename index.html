@@ -26,8 +26,6 @@
         
     </header>
 
-    
-
     <main>
       <h1>Ruth.les Photography</h1>
       <img id="heroImg" src="/img/photos/heroImg.JPG" alt="HeroImage">
@@ -43,23 +41,24 @@
 
         <section class="services">
             <h3 id="services">Sessions I Offer</h3>
+
             <section id="weddingsOffer">
-              <img src="img/photos/indexWeddings.JPG" alt="weddings">
+              <a href="gallery.html#weddings"><img src="img/photos/indexWeddings.JPG" alt="weddings"></a>
               <div id="text">Weddings</div>
             </section>
 
             <section id="portraitsOffer">
-                <img src="img/photos/indexPortraits.JPG" alt="portrait">
+              <a href="gallery.html#portraits"><img src="img/photos/indexPortraits.JPG" alt="portrait"></a>
                 <div id="text">Portraits</div>
             </section>
 
             <section id="maternityOffer">
-                <img src="img/photos/indexMaternity.JPG" alt="maternity">
+              <a href="gallery.html#maternity"><img src="img/photos/indexMaternity.JPG" alt="maternity"></a>
                 <div id="text">Maternity</div>
             </section>
         </section>
 
-        <section class="bookAppt">
+        <section id="apptSection" class="bookAppt noShow">
             <img src="img/photos/indexBookAppt.JPG" alt="Reserve Your Photography Session Today">
             <form id="apptForm">
                 <fieldset>
@@ -73,36 +72,40 @@
                     <input type="text" placeholder="example@gmail.com" name="email" required>
                   </label>
               
-                  <label for="typeOfSession">Type of Photo Session
-                    <select name="typeOfSession" id="session">
-                      <option value="wedding">Wedding</option>
-                      <option value="portrait">Portrait</option>
-                      <option value="maternity">Maternity</option>
-                    </select>
-                  </label>
-                  <label for="date">Date of Appointment: 
-                    <input type="date" id="apptTimeStart" name="date">
-                  </label>
+                  <div class="form-group">
+                    <label for="typeOfSession">Type of Photo Session
+                      <select name="typeOfSession" id="session">
+                        <option value="wedding">Wedding</option>
+                        <option value="portrait">Portrait</option>
+                        <option value="maternity">Maternity</option>
+                      </select>
+                    </label>
+                    <label for="date">Date of Appointment: 
+                      <input type="date" id="apptTimeStart" name="date">
+                    </label>
+                  </div>
               
-                  <label for="startTime">What time do you want this session to start?: 
-                    <input type="time" id="apptTimeStart" name="startTime" >
-                  </label>
-              
-                  <label for="endTime">What time do you want this session to end?: 
-                    <input type="time" id="apptTimeEnd" name="endTime" >
-                  </label>
+                  <div class="form-group">
+                    <label for="startTime">Start Time:
+                      <input type="time" id="apptTimeStart" name="startTime" >
+                    </label>
+                
+                    <label for="endTime">End Time 
+                      <input type="time" id="apptTimeEnd" name="endTime" >
+                    </label>
+                  </div>
               
                   <label for="apptMessage">Message:
                     <input id="submit-appt" type="text" placeholder="Anything else? Maybe a theme? Any extra info helps" name="apptMessage" required>
                   </label>
               
-                  <input class="submit" type="submit" value="Submit Appointment">
+                  <input class="submit btn-grad" type="submit" value="Schedule">
                 </fieldset>
                 <p id="successMessage"></p>
               </form>
         </section>
 
-        <section class="contactRuth noShow">
+        <section id="contactSection" class="contactRuth noShow">
             <form id="contactForm" >
                 <fieldset>
                   <legend>Contact Ruth</legend>
@@ -119,7 +122,7 @@
                     <input type="text" id="contactMessage" placeholder="What are you contacting Ruth for?" name="contactMessage" required>
                   </label>
               
-                  <input class="submit" type="submit" value="Submit Contact Request">
+                  <input class="submit btn-grad" type="submit" value="Contact">
               
                 </fieldset>
             </form>
@@ -134,7 +137,7 @@
               <label for="cancel">Please enter the email used to book the appt:
                 <input type="text" placeholder="example@gmail.com" name="cancel" required>
               </label>
-              <input class = "submit" type="submit" value="Submit Cancel Request">
+              <input class = "submit btn-grad cancel" type="submit" value="Cancel Appt">
             </fieldset>
           </form>
         </section>

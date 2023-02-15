@@ -1,6 +1,8 @@
 'use strict';
 // scroll to contact form on click
 
+
+
 let contactForm = document.querySelector('#contactForm');
 let apptForm = document.querySelector('#apptForm');
 let cancelForm = document.querySelector('#cancelForm');
@@ -35,13 +37,13 @@ function handleScroll(event) {
   event.preventDefault();
 
   if (event.target.id === 'contact-us') {
-    contactRuth.classList.remove('noShow');
-    bookAppt.classList.add('noShow');
+    contactSection.classList.remove('noShow');
+    apptSection.classList.add('noShow');
     contactForm.scrollIntoView({ behavior: 'smooth' });
   }
   else if (event.target.id === 'schedule') {
-    bookAppt.classList.remove('noShow');
-    contactRuth.classList.add('noShow');
+    apptSection.classList.remove('noShow');
+    contactSection.classList.add('noShow');
     apptForm.scrollIntoView({ behavior: 'smooth' });
   }
 
@@ -129,8 +131,13 @@ function handleCancel(event) {
 
 contactLink.addEventListener('click', handleScroll);
 scheduleLink.addEventListener('click', handleScroll);
-cancelForm.addEventListener('submit', handleCancel);
-apptForm.addEventListener('submit', apptHandler);
+if (cancelForm) {
+  cancelForm.addEventListener('submit', handleCancel);
+}
+if (apptForm) {
+  apptForm.addEventListener('submit', apptHandler);
+  
+}
 
 // returns data from local storage, if any
 // takes in a "key" argument
@@ -194,7 +201,9 @@ function handleContactSubmit(event) {
 }
 
 // event listener for contact form input
-contactFormDom.addEventListener('submit', handleContactSubmit);
+if (contactFormDom) {
+  contactFormDom.addEventListener('submit', handleContactSubmit);
+}
 
 // function to check local storage for existing contact info
 function checkStorage() {
@@ -217,4 +226,19 @@ function scrollFunction(){
   } else {
     document.querySelector('h1').style.fontSize = '4rem';
   }
+
+let url = window.location.href
+url = url.split('html')
+let apptSection = document.getElementById('apptSection');
+let contactSection = document.getElementById('contactSection');
+if (url[1] && url[1] === '#contactSection') {
+
+  console.log(url)
+  contactSection.classList.remove('noShow');
+  apptSection.classList.add('noShow');
+  document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
+} else if (url[1] && url[1] == '#apptSection'){
+  contactSection.classList.add('noShow');
+  apptSection.classList.remove('noShow');
+  contactForm.scrollIntoView({ behavior: 'smooth' });
 }
