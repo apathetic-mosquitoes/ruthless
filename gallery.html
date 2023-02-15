@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/gallery.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
@@ -13,23 +14,26 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#"><img src= "./img/Logo.png" id="logo" /></a>
+                <a href="index.html"><img src= "./img/Logo.png" id="logo" /></a>
             </div>
             <div class="list-items">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About Us</a></li>
+                    <li><a id="contact-us" href="index.html#contactSection">Contact Us</a></li>
+                    <li><a id="schedule" href="index.html#apptSection">Schedule</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+    
     <main>
         <section class="galleryButtons">
             <button class="btn-grad" id="weddingsButton">Weddings</button>
             <button class="btn-grad" id="portraitsButton">Portraits</button>
             <button class="btn-grad" id="maternityButton">Maternity</button>
         </section>
-        <section class="weddings">
+        <section class="weddings" id="weddings">
             <h2>Weddings</h2>
             <div class="image-div">
                 <div class="row"> 
@@ -43,7 +47,7 @@
             </div>
         </section>
 
-        <section class="Portraits no-show">
+        <section class="Portraits no-show" id="portraits">
             <h2>Portraits</h2>
             <div class="image-div">
                 <div class="row"> 
@@ -57,7 +61,7 @@
             </div>
         </section>
 
-        <section class="Maternity no-show">
+        <section class="Maternity no-show" id="maternity">
             <h2>Maternity</h2>
             <div class="image-div">
                 <div class="row">
@@ -81,7 +85,6 @@
             <p>Page created by <a href="about-us.html" alt="apathetic-mosquitoes">apathetic-mosquitoes</a>.</p> 
         </div>
     </footer>
-    
     <script src="js/gallery.js"></script>
 </body>
 </html>
