@@ -101,7 +101,6 @@ function handleCancel(event) {
     if (event.target.cancel.value === appointment_array[i].email) {
       appointment_array.splice(i, 1);
       let FILTERED_ARRAY = appointment_array.filter(value => JSON.stringify(value) !== '[]');
-      localStorage.clear();
       saveToLocalStorage(FILTERED_ARRAY);
       inArray = true;
     }
