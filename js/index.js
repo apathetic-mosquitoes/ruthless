@@ -40,10 +40,12 @@ function handleScroll(event) {
   if (event.target.id === 'contact-us') {
     contactSection.classList.remove('noShow');
     apptSection.classList.add('noShow');
+    cancelSection.classList.add('noShow');
     contactRuth.scrollIntoView({ behavior: 'smooth' });
   }
   else if (event.target.id === 'schedule') {
     apptSection.classList.remove('noShow');
+    cancelSection.classList.remove('noShow');
     contactSection.classList.add('noShow');
     bookAppt.scrollIntoView({ behavior: 'smooth' });
   }
@@ -221,23 +223,25 @@ function checkStorage() {
 window.onscroll = function(){scrollFunction()};
 function scrollFunction(){
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector('h1').style.fontSize = '30px';
-  } else {
     document.querySelector('h1').style.fontSize = '4rem';
+  } else {
+    document.querySelector('h1').style.fontSize = '6rem';
   }
 }
-let url = window.location.href
-url = url.split('html')
+let url = window.location.href;
+url = url.split('html');
 let apptSection = document.getElementById('apptSection');
 let contactSection = document.getElementById('contactSection');
+let cancelSection = document.getElementById('cancelSection');
 if (url[1] && url[1] === '#contactSection') {
-
-  console.log(url)
+  // console.log(url);
   contactSection.classList.remove('noShow');
   apptSection.classList.add('noShow');
+  cancelSection.classList.add('noShow');
   document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
-} else if (url[1] && url[1] == '#apptSection'){
+} else if (url[1] && url[1] === '#apptSection'){
   contactSection.classList.add('noShow');
   apptSection.classList.remove('noShow');
+  cancelSection.classList.remove('noShow');
   contactForm.scrollIntoView({ behavior: 'smooth' });
 }

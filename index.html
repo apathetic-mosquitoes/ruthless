@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Zeyada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     
@@ -16,7 +23,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#"><img src= "img/Logo.png" alt="ruth.less photo logo" id="logo"/></a>
+                <a href="index.html"><img src= "img/Logo.png" alt="ruth.less photo logo" id="logo"/></a>
             </div>
             <div class="list-items">
                 <ul>
@@ -31,8 +38,10 @@
     </header>
 
     <main>
-      <h1>Ruth.les Photography</h1>
-      <img id="heroImg" src="img/photos/heroImg.JPG" alt="HeroImage">
+      <div id="hero-container">
+        <h1 id="homepage-h1">Ruth.les Photography</h2>
+        <img id="heroImg" src="img/photos/heroImg.JPG" alt="HeroImage">
+      </div>
 
         <section class="aboutRuth">
             <section id="aboutRuth">
@@ -47,18 +56,23 @@
             <h3 id="services">Sessions I Offer</h3>
 
             <section id="weddingsOffer">
-              <a href="gallery.html#weddings"><img src="img/photos/indexWeddings.JPG" alt="weddings"></a>
-              <div id="text">Weddings</div>
+              <a href="gallery.html#weddings">
+                <div class="text">Weddings</div>
+                <img src="img/photos/indexWeddings.JPG" alt="weddings"></a>
             </section>
 
             <section id="portraitsOffer">
-              <a href="gallery.html#portraits"><img src="img/photos/indexPortraits.JPG" alt="portrait"></a>
-                <div id="text">Portraits</div>
+              
+              <a href="gallery.html#portraits">
+                <div class="text">Portraits</div>
+                <img src="img/photos/indexPortraits.JPG" alt="portrait"></a>       
             </section>
 
             <section id="maternityOffer">
-              <a href="gallery.html#maternity"><img src="img/photos/indexMaternity.JPG" alt="maternity"></a>
-                <div id="text">Maternity</div>
+              
+              <a href="gallery.html#maternity">
+                <div class="text">Maternity</div>
+                <img src="img/photos/indexMaternity.JPG" alt="maternity"></a>            
             </section>
         </section>
 
@@ -133,7 +147,7 @@
             <img src="img/photos/indexContact.JPG" alt="Contact Me!">
         </section>
 
-        <section class="cancelAppt">
+        <section class="cancelAppt noShow" id="cancelSection">
           <img src="img/photos/indexCancel.JPG" alt="Contact Me!">
           <form id="cancelForm">
             <fieldset>
@@ -141,7 +155,8 @@
               <label for="cancel">Please enter the email used to book the appt:
                 <input type="text" placeholder="example@gmail.com" name="cancel" required>
               </label>
-              <input class = "submit btn-grad cancel" type="submit" value="Cancel Appt">
+              <!-- <input class = "submit btn-grad cancel" type="submit" value="Cancel Appt"> -->
+              <button class = "submit btn-grad cancel" type="submit" value="Cancel Appt">Cancel</button>
             </fieldset>
           </form>
         </section>
