@@ -22,11 +22,19 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
-h1{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-size: 4rem;
+#hero-container {
+    position: relative;
+}
+
+#homepage-h1{
+    position:absolute;
+    bottom: 50px;
+    right: 30px;
+    color: white;
+    font-size: 6rem;
     transition: 0.4s;
+    /* font-family: 'Zeyada', cursive; */
+    font-family: 'Fuggles', cursive;
 }
 
 #heroImg{
@@ -86,10 +94,6 @@ main {
     margin: auto;
 }
 
-footer{
-    width: 960px;
-    margin: auto;
-}
 
 #heroImg {
   margin: auto;
@@ -200,11 +204,6 @@ footer{
 .contactRuth img {
     margin:auto;
 }
-
-
-fieldset{
-    border: solid black 1px;
-}
  
 .contactRuth form{
     width: 75%; 
@@ -236,15 +235,13 @@ input, select {
     border-radius: 4px;
 }
 
-.submit{
-    width: 150px;
-    margin-left:75%;
-}
-
 fieldset {
     padding: 1rem;
     margin: .5rem;
-}
+    border: solid black 1px;
+    border-radius: 4px;
+    }
+
 
 
 #logo {
@@ -262,7 +259,7 @@ fieldset {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
-
+/*
 .btn-grad {
     background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
     text-align: center;
@@ -277,10 +274,40 @@ fieldset {
 
   .btn-grad:hover {
     background-position: right center; /* change the direction of the change here */
+/*
     color: #fff;
     text-decoration: none;
   }
+  */
 
+  .submit {
+    font-size: 15px;
+    width: 150px;
+    height:40px;
+    padding: 0;
+    border: solid rgba(0, 0, 0, 0.178) 1px;
+    border-radius: 4px;
+
+    background:
+      conic-gradient(            #fff 0 90deg, #fff0 0) bottom left,
+      conic-gradient(            #000 0 90deg, #fff0 0) bottom left,
+      conic-gradient(from  90deg,#fff 0 90deg, #fff0 0) top left,
+      conic-gradient(from  90deg,#000 0 90deg, #fff0 0) top left,
+      conic-gradient(from 180deg,#fff 0 90deg, #fff0 0) top right,
+      conic-gradient(from 180deg,#000 0 90deg, #fff0 0) top right,
+      conic-gradient(from -90deg,#fff 0 90deg, #fff0 0) bottom right,
+      conic-gradient(from -90deg,#000 0 90deg, #fff0 0) bottom right,
+      #000;
+    -webkit-background-clip:text,padding-box;
+            background-clip:text,padding-box;
+    background-size: 202% 202%;
+    transition: 0.25s;
+  }
+  
+  .submit:hover {  
+    background-position: center;
+    color:white;
+   }
 
 #kirk {
     max-width: 400px;
@@ -297,6 +324,8 @@ footer {
     grid-template-rows: 1px 10px 100px 30px 25px;
     color:#ffffffff;
 }
+
+
 
 footer img{
     grid-row-start: 3;
