@@ -13,10 +13,10 @@
     },
     "rules": {
       "no-var": "error",
-      "eqeqeq": [
-        "error",
-        "always"
-      ],
+      // "eqeqeq": [
+      //   "error",
+      //   "always"
+      // ],
       "no-console": "off",
       "no-undefined": "off",
       // "indent": [
