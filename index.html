@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Zeyada&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     
@@ -20,7 +23,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="#"><img src= "img/Logo.png" alt="ruth.less photo logo" id="logo"/></a>
+                <a href="index.html"><img src= "img/Logo.png" alt="ruth.less photo logo" id="logo"/></a>
             </div>
             <div class="list-items">
                 <ul>
@@ -35,8 +38,10 @@
     </header>
 
     <main>
-      <h1>Ruth.les Photography</h1>
-      <img id="heroImg" src="img/photos/heroImg.JPG" alt="HeroImage">
+      <div id="hero-container">
+        <h1 id="homepage-h1">Ruth.les Photography</h2>
+        <img id="heroImg" src="img/photos/heroImg.JPG" alt="HeroImage">
+      </div>
 
         <section class="aboutRuth">
             <section id="aboutRuth">
@@ -150,7 +155,8 @@
               <label for="cancel">Please enter the email used to book the appt:
                 <input type="text" placeholder="example@gmail.com" name="cancel" required>
               </label>
-              <input class = "submit btn-grad cancel" type="submit" value="Cancel Appt">
+              <!-- <input class = "submit btn-grad cancel" type="submit" value="Cancel Appt"> -->
+              <button class = "submit btn-grad cancel" type="submit" value="Cancel Appt">Cancel</button>
             </fieldset>
           </form>
         </section>
