@@ -72,6 +72,7 @@ nav {
     position: fixed;
     width: 960px;
     margin: auto;
+    z-index: 9;
 }
 
 .list-items {
@@ -86,7 +87,6 @@ nav ul {
     align-items: center;
     flex-basis: 100%;
     list-style-type: none;
-    
 }
 
 main {
@@ -104,7 +104,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 7rem auto 7rem 0;
 }
 
 #aboutRuth{
@@ -187,6 +187,7 @@ main {
     grid-row-end: 3;
 }
 
+/* form styling */
 .bookAppt, .contactRuth, .cancelAppt{
     width: 100%;
     margin: 0rem auto 7rem auto;
@@ -347,4 +348,36 @@ footer img{
 #footer-creators p a{
     text-decoration: none;
     color: whitesmoke;
+}
+
+/* ****image overlay when hovered**** */
+.services section {
+    position:relative;
+}
+.text {
+    /* border: 2px solid black; */
+    background-color: #ddddddc5;
+    position: absolute;
+    box-sizing: content-box;
+    text-align: center;
+    font-family: 'Zeyada', cursive;
+    font-size: 35px;
+    color:#07080D;
+    opacity:0;
+    transition: 0.4s ease-in-out;
+}
+
+#weddingsOffer a .text{
+    padding: 213px 97px;
+}
+#portraitsOffer a .text{
+    padding: 213px 93px;
+}
+
+#maternityOffer a .text{
+    padding: 214px 83px;
+}
+
+.text:hover {
+    opacity: 1;
 }

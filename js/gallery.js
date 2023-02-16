@@ -38,6 +38,7 @@ function handleMaternityClick(){
 }
 
 // eslint-disable-next-line semi
+/*
 window.onscroll = function(){scrollFunction()};
 function scrollFunction(){
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -46,6 +47,7 @@ function scrollFunction(){
     document.querySelector('h1').style.fontSize = '4rem';
   }
 }
+*/
 function pageLoad() {
     if (topic.includes('#')){
         let userSelection = topic.split('#')[1];
