@@ -239,7 +239,7 @@ if (url[1] && url[1] === '#contactSection') {
   apptSection.classList.add('noShow');
   cancelSection.classList.add('noShow');
   document.getElementById('contactSection').scrollIntoView({ behavior: 'smooth' });
-} else if (url[1] && url[1] == '#apptSection'){
+} else if (url[1] && url[1] === '#apptSection'){
   contactSection.classList.add('noShow');
   apptSection.classList.remove('noShow');
   cancelSection.classList.remove('noShow');
